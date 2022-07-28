@@ -1,0 +1,25 @@
+body,
+#wrap{
+  &:before, 
+  &:after {
+    content: "";
+    background: #3a80a3;
+    position: fixed;
+    display: block;
+    z-index: 5;
+  }
+}
+body{
+  &:before{
+    height: 10px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  &:after{
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }  
+}
